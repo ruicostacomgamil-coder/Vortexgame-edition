@@ -1,0 +1,33 @@
+VORTEXCONTROL GAME EDITION V0.5 PRO — GERAR APK
+
+IMPORTANTE
+Este pacote contém o CÓDIGO-FONTE Android. Ele ainda não é um APK instalável e não foi compilado/testado no Galaxy A15.
+O HTML to APK não compila este projeto nativo.
+
+GERAR O APK PELO GITHUB (SEM PYTHON E SEM ANDROID STUDIO)
+1. No navegador, entre em https://github.com e crie uma conta ou entre na sua.
+2. Toque em + e escolha New repository.
+3. Nome: vortexcontrol-game-edition. Marque Public ou Private e crie o repositório.
+4. Extraia este ZIP. Abra a pasta VortexControl_Game_Edition_V0_4_Android.
+5. No repositório do GitHub, use Add file > Upload files e envie TODO o conteúdo dessa pasta, incluindo a pasta oculta .github/workflows.
+   ATENÇÃO: a pasta .github é necessária para a compilação automática. Se o celular não mostrar arquivos ocultos, use o GitHub pelo navegador em modo computador ou um método de upload que preserve .github.
+6. Faça Commit changes.
+7. Abra a aba Actions do repositório.
+8. Se aparecer aviso para habilitar Actions, habilite.
+9. Abra “Build VortexControl APK” e toque em Run workflow.
+10. Aguarde terminar. Se ficar verde, abra a execução e baixe o artefato “VortexControl-Game-Edition-debug”.
+11. Extraia o artefato baixado. O arquivo app-debug.apk estará dentro.
+12. Instale o APK no Galaxy A15. O Android poderá pedir autorização para instalar apps dessa origem.
+
+SE DER ERRO
+Se a compilação ficar vermelha, abra a execução em Actions, copie o trecho do erro e envie aqui. Não instale APK de outra fonte.
+
+O QUE O PROTÓTIPO PRETENDE FAZER
+- Solicitar autorização do Android para captura de tela.
+- Exibir um HUD flutuante.
+- Fazer OCR da imagem capturada e procurar velocidade/RPM/marcha.
+
+LIMITAÇÕES DO PROTÓTIPO
+- O reconhecimento depende de como o Projeto Grau 2 desenha os números na tela; talvez seja necessário calibrar depois do primeiro teste.
+- A autorização de captura é concedida pelo próprio Android e precisa ser aceita pelo usuário.
+- Não lê memória interna do jogo, não altera arquivos do jogo e não garante compatibilidade até ser compilado e testado no aparelho.
